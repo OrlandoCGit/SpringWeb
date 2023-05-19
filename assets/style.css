@@ -1,0 +1,36 @@
+html{
+    scroll-behavior: smooth;
+}
+h1{
+    color: white;
+    background-color: rgb(13, 98, 99);;
+
+}
+h2{
+    color: white;
+    background-color: rgb(13, 98, 99);;
+
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+h3{
+    color:lightsalmon;
+    background-color: black;
+}
+header{
+    display: flex;
+    background-color: lightblue;
+    width: auto;
+    height: 2rem;
+    align-items: center;
+    text-align: center;
+}
+nav{
+    display: flex;
+    text-align: center;
+    border-color: black;
+    align-items: center;
+}

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Mi Portafolio</title>
+	<link rel="stylesheet" href="assets/style.css" />
+	<link rel="icon" href="img/ajolote-amphibian-svgrepo-com.svg" type="svg">
+</head>
+
+<body>
+	<hr />
+	<h1 id="inicio">Orlando Castillo Gutiérrez</h1>
+	<hr />
+	<h3>Temario del Curso</h3>
+	<ul>
+		
+		<li><a href="index.html#inicio">Inicio</a></li>
+		<li><a href="index.html#codigo">Codigo</a></li>
+		<li><a href="index.html#etiquetas-semanticas">Etiquetas Semanticas</a></li>
+		<li><a href="index.html#etiqueta-de-bloque">Etiqueta de bloque</a></li>
+		<li><a href="index.html#imagenes">Imagenes</a></li>
+		<li><a href="index.html#figuras">Figuras</a></li>
+		<li><a href="index.html#listas">Listas</a></li>
+		<li><a href="index.html#tablas">Tablas</a></li>
+		<li><a href="index.html#bloques">Bloques</a></li>
+		<li><a href="index.html#enlaces">Enlaces</a></li>
+		<li><a href="index.html#"></a></li>
+		<li><a href="index.html#"></a></li>
+		<li><a href="index.html#"></a></li>
+		<li><a href="index.html#"></a></li>
+		<li><a href="index.html#"></a></li>
+		<li><a href="index.html#"></a></li>
+		<li><a href="index.html#"></a></li>
+		<li ><a href="index.html#mensajes-por-consola">Script</a></li>
+	</ul>
+	<pre id="codigo">
+		<p>
+			<code>
+				Este texto está en  formato de codigo
+				import React from "react";
+				import Title from "./Title"
+
+				funtion App{
+					return &lt;Title&gt;
+				}
+			</code>
+		</p>
+	</pre>
+	<hr />
+
+	<h2 id="etiquetas-semanticas">Etiquetas Semánticas Estructurales</h2>
+
+	<div>Etiqueta semántica que no tiene semántica</div>
+	<header>El header- Cabecera de un sitio web de una seccion</header>
+	<main>
+		Main - definine la sección principal del documento, solo puede existir
+		<b>una etiqueta main por documento</b>
+	</main>
+	<footer>Footer - Pié de página de un sitio web o de una seccion</footer>
+	<nav>Nav- Representa una navegacion o botonera</nav>
+	<article>
+		artcle - Representa una seccion autocontenido (que por si sola se explica)
+	</article>
+	<aside>
+		Aside- representa contenido complementario o secundario, nos sirve para
+		publicidad o articulos relacionados
+	</aside>
+	<section>Section- representa una seccion de contenido generico</section>
+	<address>
+		addres-Representa una direccion o cualquier direccion de contacto
+	</address>
+
+	<hr />
+	<br><br><br><br><br>
+	<h2 id="etiqueta-de-bloque">Etiquetas de bloque vs etiquetas de linea</h2>
+	<div style="background-color: lightblue">
+		La etiqueta de bloque por excelencia es la DIV es envidiosa, genera saltos
+		de linea
+	</div>
+	<span style="background-color: lightcoral">
+		La etiqueta en linea de la excelencia es la SPAN, una etiqueta de linea,
+		solo ocupa el espacio necesario que tiene su contenido
+	</span>
+	<span>Hola soy otro span</span>
+
+	<hr /><br><br><br><br><br><br><br><br><br><br>
+	<h2 id="imagenes">Imagenes</h2>
+	<img src="img/ajolote-amphibian-svgrepo-com.svg" alt="Ajolote" />
+	<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+		<path fill-rule="evenodd" clip-rule="evenodd"
+			d="M5 7H19C19.5523 7 20 7.44771 20 8V16C20 16.5523 19.5523 17 19 17H5C4.44772 17 4 16.5523 4 16V8C4 7.44772 4.44772 7 5 7ZM2 8C2 6.34315 3.34315 5 5 5H19C20.6569 5 22 6.34315 22 8V16C22 17.6569 20.6569 19 19 19H5C3.34315 19 2 17.6569 2 16V8ZM10 9L14 12L10 15V9Z"
+			fill="currentColor" />
+	</svg>
+
+	<hr />
+	<br><br><br><br><br>
+
+	<h2 id="figuras">Figuras</h2>
+	<figure>
+		<img src="img/e608fd17cda2dcb74faca3ab8b880b8d.jpg" alt="Crepas" srcset="" />
+		<figcaption>Crepa de Fresa</figcaption>
+	</figure>
+
+	<hr>
+	<br><br><br><br><br><br><br><br><br><br>
+
+	<h2 id="listas">Listas</h2>
+	<h3>Listas Ordenadas</h3>
+	<ol>
+		<li>Primavera</li>
+		<li>Verano</li>
+		<li>Otoño</li>
+		<li>Invierno</li>
+	</ol>
+
+	<ol start="3">
+		<li>Primavera</li>
+		<li>Verano</li>
+		<li>Otoño</li>
+		<li>Invierno</li>
+	</ol>
+
+	<ol reversed start="5" type="I">
+		<li>Primavera</li>
+		<li>Verano</li>
+		<li>Otoño</li>
+		<li>Invierno</li>
+	</ol>
+	<h3>Listas Desordenadas</h3>
+	<ul type="circle">
+		<li>Terminar el curso de HTML</li>
+		<li>Empezar el curso de CSS(Fundamentos)</li>
+		<li>Empezar curso de JavaScript</li>
+	</ul>
+
+	<h3>Listas de Definicion</h3>
+	<dl>
+		<dt>HTML</dt>
+			<dd>Es un lenguaje de marcado que define el contenido de la web</dd>
+		<dt>CSS</dt>
+			<dd>Es un lenguaje de definicion que da estilos al codigo HTML</dd>
+		<dt>JavaScript
+			<dd>Lenguaje de programacion que da ordenes al html</dd>
+		</dt>
+		<dt>Orlando
+			<dd>Proveniente de la tierra del oro</dd>
+		</dt>
+	</dl>
+
+	<hr>
+	<br><br><br><br><br>
+
+	<h2 id="tablas">Tablas</h2>
+
+	<table>
+		<tr>
+			<td>Nombre</td>
+			<td>Constelacion</td>
+			<td>Tipo</td>
+		</tr>
+		<tr>
+			<td>Ikki</td>
+			<td>Fenix</td>
+			<td>Dorado</td>
+		</tr>
+		<tr>
+			<td>Shaina</td>
+			<td>Ofiuco</td>
+			<td>Dorado</td>
+		</tr>
+		<tr>
+			<td>Saga</td>
+			<td>Geminis</td>
+			<td>Dorado</td>
+		</tr>
+	</table>
+
+	<br><br><br>
+
+	<table>
+		<thead>
+			<tr>
+				<th colspan="3">Tabla de los santos de atena</th>
+			</tr>
+			<tr>
+				<th>Nombre</th>
+				<th>Constelacion</th>
+				<th>Tipo</th>
+			</tr>
+		</thead>
+
+		<tbody>
+			<tr>
+				<td>Ikki</td>
+				<td>Fenix</td>
+				<td>Dorado</td>
+			</tr>
+			<tr>
+				<td>Mistry</td>
+				<td>Lagarto</td>
+				<td>Plata</td>
+			</tr>
+			<tr>
+				<td>Saga</td>
+				<td>Geminis</td>
+				<td>Dorado</td>
+			</tr>
+			<tr>
+				<td>Shaina</td>
+				<td rowspan="2">Ofiuco</td>
+				<td>Plata</td>
+			</tr>
+			<tr>
+				<td>Odiseo</td>
+				<td>Dorada</td>
+			</tr>
+		</tbody>
+		<tfoot>
+			<tr>
+				<th colspan="3"><small>Saint Seiya fue creada por Masami Kurumada</small></th>
+			</tr>
+		</tfoot>
+	</table>
+
+	<hr>
+<br><br><br><br><br>
+	<blockquote id="bloques"><i>El resplandor: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum vel, nisi fuga debitis
+			cumque voluptatibus. Voluptate illum quasi saepe rerum dolorum! Impedit qui sed in provident magni!
+			Exercitationem, accusamus. Cumque?
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint eligendi reiciendis quis! Quis velit quidem at
+			assumenda error libero repudiandae, aut sapiente? Id explicabo reiciendis laborum illum totam nihil? Iusto!
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum ipsum explicabo quis, dolores libero
+			incidunt error! Quae quisquam voluptate facere, tempora, iusto nam dolores, nemo suscipit aperiam voluptatum
+			quidem non.
+		</i></blockquote>
+	<details>
+		<summary>Mis Libros</summary>
+		<p>IT</p>
+		<p>El resplandor</p>
+		<p>La caza</p>
+		<p>El principito</p>
+	</details>
+	<br><br><br><br><br>
+	<hr>
+	<h2 id="enlaces">Enlaces</h2>
+	<a href="hola.html">Ir a la pagina 2: "Hola"</a>
+	<br>
+	<a href="https://jonmircha.com/cursos" target="_blank">
+		<img src="img/ajolote-amphibian-svgrepo-com.svg" alt="Imagen rota" width="80" height="80">
+	</a>
+	<a href="index.html#inicio">Inicio☝️</a>
+	<a href="libro.html">Ir a la pagina principal 👉</a>
+<hr>
+
+
+
+	<hr>
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<h2>Script en HTML</h2>
+	<script id="mensajes-por-consola">
+		console.log("Hola estamos aprendiendo html");
+	</script>
+	<script src="assets/codigos.js"></script>
+</body>
+
+</html>
