@@ -3,11 +3,20 @@
 
 <head>
 	<meta charset="UTF-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta http-equiv="X-UA-Compatible" content="Brave" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>Mi Portafolio</title>
+	<meta name="description" content="Esta es mi pagina de fundamento de HTML">
+	<link rel="canonical" href="https://tudominio.com/la-url-canonica">
 	<link rel="stylesheet" href="assets/style.css" />
-	<link rel="icon" href="img/ajolote-amphibian-svgrepo-com.svg" type="svg">
+	<link rel="icon" href="img/ajolote-amphibian-svgrepo-com.svg">
+	<link rel="apple-touch-icon" href="img/ajolote-amphibian-svgrepo-com.svg">
+	<meta name="theme-color" content="#FFFF0">
+	<meta property="og:title" content="Portafolio">
+	<meta property="og:description" content="Esta es mi pagina de fundamento de HTML">
+	<meta property="og:image" content="https://papekafy.com/img/ajolote-amphibian-svgrepo-com.svg">
+	<meta property="og:url" content="https://papekafy.com/index.html">
+	<meta name="twitter:card" content="summary">
 </head>
 
 <body>
@@ -327,8 +336,138 @@
 	<br><br>
 	<hr>
 	<h2>IFrames</h2>
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/-oK6zL01fNM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/-oK6zL01fNM" title="YouTube video player"
+		frameborder="0"
+		allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+		allowfullscreen></iframe>
+	<br><br>
+	<hr>
+	<h2>Formularios</h2>
+	<h4>Elemetos del formulario</h4>
+	<input type="text">
+	<br>
+	<input type="checkbox" name="" id="">
+	<br>
+	<input type="radio" name="" id="">
+	<br>
+	<input type="date" name="" id=""><br>
+	<input type="color" name="" id=""><br>
+	<input type="button" value="Botón"><br>
+	<input type="submit" value="Boton de envio"><br>
+	<input type="reset" value="Reset"><br>
+	<input type="file" name="" id=""><br>
+	<input type="file" multiple name="" id=""><br>
+	<input type="hidden" name="idioma" value="es"><br>
+	<input type="email" name="" id=""><br>
+	<input type="number" name="" id=""><br>
+	<input type="tel"><br>
+	<input type="password" name="" id=""><br>
+	<input type="search" name="" id=""><br>
+	<textarea name="" id="" cols="30" rows="5"></textarea><br>
+	<select name="" id="">
+		<option value="">HTML</option>
+		<option value="">CSS</option>
+		<option value="">JS</option>
+		<option value="">PHP</option>
+		<option value="">Python </option>
+	</select>
+	<br>
+	<select name="" id="" multiple>
+		<option value="">HTML</option>
+		<option value="">CSS</option>
+		<option value="">JS</option>
+		<option value="">PHP</option>
+		<option value="">Python </option>
+	</select>
+	<h3>Atributos de los Formularios</h3>
+	<div>Atributos de Text<br>
+		ReadOnly:
+		<input type="text" value="Orlando Castillo" readonly disabled><br>
+		PlaceHolder:
+		<input type="text" placeholder="Escribe tu nombre">
+	</div>
+
+	<h3>Formularios Ejemplo</h3>
+	<h4>Formulario de Login</h4>
+	<!--Action= A donde se va a enviar nuestra informacion de nuestro formulario-->
+	<form action="#" method="POST" autocomplete="off">
+		<label for="usuario">Usuario: </label><br>
+		<input type="text" name="usuario" id="usuario" placeholder="Escriba su nombre" pattern="^[a-zA-Z]+$"
+			title="El campo solo acepta letras" required><br>
+		<label for="password">Contraseña: </label><br>
+		<input type="password" name="password" id="password"><br>
+
+		<input type="submit">
+		<input type="reset" value="Restablecer"><br>
+	</form>
+	<br><br>
+	<h4>Selects Radios y Checkbox</h4>
+	<form>
+		<p>Elige tu idioma:</p>
+		<select name="idioma" required>
+			<option value="">Elige una opción</option>
+			<option value="es" selected>Español</option>
+			<option value="en">Ingles</option>
+			<option value="fr">Frances</option>
+			<option value="it">Italiano</option>
+			<option value="pt">Portugues</option>
+			<option value="rs">Ruso</option>
+		</select>
+		<input type="radio" name="lenguaje" id="radio-js" value="js">
+		<label for="radio-js">JavaScript</label>
+
+		<input type="radio" name="lenguaje" id="radio-jv" value="jv">
+		<label for="radio-jv">Java</label>
+
+		<input type="radio" name="lenguaje" id="radio-php" value="php">
+		<label for="radio-php">PHP</label>
+		<br><br>
+
+		<p>Elige tus intereses:</p>
+		<label>
+			<input type="checkbox" name="intereses" id="" value="deportes">
+			Deportes
+		</label>
+		<label>
+			<input type="checkbox" name="intereses" id="" value="finanzas">
+			Finanzas
+		</label>
+		<label>
+			<input type="checkbox" name="intereses" id="" value="salud">
+			Salud
+		</label>
+		<br>
+		<p>
+			<label>
+				<input type="checkbox" name="terminos" required>
+				Acepto los temrinos y condiciones
+			</label>
+		</p>
+		<input type="submit" value="Enviar">
+		<input type="reset" value="Reset">
+	</form>
+
+	<h4>Formulario de Contacto Funcional</h4><br>
+	<form action="https://formsubmit.co/orlandocastillog@hotmail.com" method="POST">
+		<input type="text" name="nombre" placeholder="Escribe tu nombre" 
+		pattern="^[A-Za-zÑñÁáÉéÍíÓóÚÜúÚ\s]+$" title="Nombre solo acepta letras y espacios en blanco" required> <br>
+		<input type="email" name="correo" placeholder="correo@--.com" pattern="^(\w+[/./-/_]?){1,}@[a-zA-Z]+[/.]\w{2,}$" title="Formato de correo invalido" required><br> 
+		<textarea name="comentario" id="" cols="30" rows="10" required></textarea><br>
+
+		<input type="submit" value="Enviar">
+	</form>
+
+	<br><br>
+	<hr>
+	<h2 id="data-attributes">Data Attributes</h2>
+	<ul>
+		<li data-id="1" data-name="spring">Primavera</li>
+		<li data-id="2" data-name="summer">Verano</li>
+		<li data-id="3" data-name="autumn">Otoño</li>
+		<li data-id="4" data-name="winter">Inviernos</li>
+	</ul>
+
+	<br><br><br><br><br><br><br><br><br><br><br><br>
 	<h2>Script en HTML</h2>
 	<script id="mensajes-por-consola">
 		console.log("Hola estamos aprendiendo html");
